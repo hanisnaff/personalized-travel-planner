@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import {
   ArrowDownRight, ArrowLeft, ArrowRight, Bookmark, CalendarDays, Check, ChevronDown,
   CircleHelp, Compass, Download, Globe2, Heart, Hotel, Leaf, MapPin, Menu, MoreHorizontal,
