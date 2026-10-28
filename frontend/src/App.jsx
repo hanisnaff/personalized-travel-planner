@@ -6,7 +6,7 @@ import {
   Utensils, Footprints, Landmark, Mountain, Waves, Coffee, Sun, Map, SlidersHorizontal
 } from 'lucide-react';
 
-const API_BASE = (import.meta.env.VITE_API_URL || 'http://localhost:8000').replace(/\/$/, '');
+const API_BASE = (import.meta.env.VITE_API_URL || '').replace(/\/$/, '');
 const INTERESTS = ['Food', 'Culture', 'Nature', 'Adventure', 'Shopping', 'Sightseeing', 'Nightlife', 'Relaxation'];
 const DEFAULT_FORM = { destination: '', departure_date: new Date(Date.now() + 7 * 86400000).toISOString().slice(0, 10), duration: '3', budget: '15000', currency: 'INR', travelers: '2', interests: ['Culture', 'Food', 'Sightseeing'], travel_style: 'Balanced', accommodation: 'Hotel' };
 const fmt = (amount, currency = 'INR') => new Intl.NumberFormat('en-IN', { style: 'currency', currency, maximumFractionDigits: 0 }).format(Number(amount || 0));
